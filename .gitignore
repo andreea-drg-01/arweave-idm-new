@@ -1,0 +1,11 @@
+node_modules/
+.db/
+.db-test/
+# secrets: NEVER commit wallets or issuer secret keys
+wallet*.json
+*.jwk.json
+results/issuer-keys.json
+# measurement output (commit curated results manually if desired)
+results/*.csv
+results/*.json
+!results/.gitkeep
