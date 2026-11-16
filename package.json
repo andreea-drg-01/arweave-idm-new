@@ -4,7 +4,9 @@
   "description": "Prototype self-sovereign identity management on Arweave: DID documents on Arweave, ArNS resolution, BBS selective-disclosure credentials.",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "test": "node --test \"test/**/*.test.js\"",
     "test:unit": "node --test \"test/unit/*.test.js\"",
@@ -22,5 +24,6 @@
     "bs58": "latest"
   },
   "devDependencies": {
+    "arlocal": "^1.1.66"
   }
 }

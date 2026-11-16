@@ -18,7 +18,11 @@ const didDoc = JSON.stringify(buildDidDocument({
 }));
 const list = new StatusList();
 const emptyList = JSON.stringify(list.toDocument({ id: 'urn:s:1', issuer: 'did:arweave:' + 'A'.repeat(43) }));
-for (let i = 0; i < 131072; i += 97) list.set(i); // ~1% revoked: realistic worst case for compression
+// ~1% revoked at pseudo-random positions (seeded, reproducible). Random positions are the realistic case
+// for compression; a periodic pattern (e.g. every 97th bit) compresses unrealistically well.
+let seed = 12345;
+const rnd = () => { seed = (seed * 1664525 + 1013904223) >>> 0; return seed / 2 ** 32; };
+for (let n = 0; n < 1311; n++) list.set(Math.floor(rnd() * 131072));
 const busyList = JSON.stringify(list.toDocument({ id: 'urn:s:1', issuer: 'did:arweave:' + 'A'.repeat(43) }));
 
 const artifacts = [
