@@ -73,7 +73,7 @@ export async function verifyPresentation({ presentation, issuerPublicKey, nonce 
   const { schema, revealedIndexes, revealed } = presentation;
   const messages = revealedIndexes.map((i) => messageFor(schema[i], revealed[schema[i]]));
   try {
-    const { verified } = await verifyProof({
+    const result = await verifyProof({
       publicKey: issuerPublicKey,
       proof: fromB64(presentation.proofValue),
       header: headerFor(presentation.issuer, schema),
@@ -81,8 +81,9 @@ export async function verifyPresentation({ presentation, issuerPublicKey, nonce 
       messages,
       disclosedMessageIndexes: revealedIndexes
     });
-    return verified === true;
-  } catch {
-    return false; // malformed proof / indexes => reject
+    return result === true || result?.verified === true;
+  } catch (e) {
+    console.error('verifyProof error:', e);
+    return false;
   }
 }

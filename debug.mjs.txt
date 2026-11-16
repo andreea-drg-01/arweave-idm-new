@@ -1,0 +1,31 @@
+import * as bbs from '@digitalbazaar/bbs-signatures';
+import { generateIssuerKeys, sign, deriveProof, verifyProof, toBytes, CIPHERSUITE } from './src/bbs.js';
+
+console.log('exports:', Object.keys(bbs));
+console.log('ciphersuite folosit:', CIPHERSUITE);
+
+const keys = await generateIssuerKeys();
+const header = toBytes('h');
+const messages = ['a', 'b', 'c'].map(toBytes);
+
+const signature = await sign({ keys, header, messages });
+console.log('semnatura, bytes:', signature.length);
+
+if (bbs.verifySignature) {
+  console.log('verifySignature:', await bbs.verifySignature({
+    publicKey: keys.publicKey, signature, header, messages, ciphersuite: CIPHERSUITE
+  }));
+}
+
+const ph = toBytes('n');
+const proof = await deriveProof({
+  publicKey: keys.publicKey, signature, header, messages,
+  presentationHeader: ph, disclosedMessageIndexes: [1]
+});
+console.log('proof, bytes:', proof.length);
+
+const r = await verifyProof({
+  publicKey: keys.publicKey, proof, header, presentationHeader: ph,
+  messages: [messages[1]], disclosedMessageIndexes: [1]
+});
+console.log('verifyProof a returnat:', typeof r, r);

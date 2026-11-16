@@ -43,7 +43,7 @@ export async function verifyProof({ publicKey, proof, header, presentationHeader
     proof,
     header,
     presentationHeader,
-    messages,
+    disclosedMessages: messages,
     disclosedMessageIndexes,
     ciphersuite: CIPHERSUITE
   }); // { verified: boolean, error? }

@@ -6,9 +6,9 @@
   "type": "module",
   "engines": { "node": ">=20" },
   "scripts": {
-    "test": "node --test test/unit/ test/e2e/",
-    "test:unit": "node --test test/unit/",
-    "test:e2e": "node --test test/e2e/",
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:unit": "node --test \"test/unit/*.test.js\"",
+    "test:e2e": "node --test \"test/e2e/*.test.js\"",
     "bench:crypto": "node bench/crypto.js",
     "mainnet:cost": "node scripts/mainnet/01-cost.js",
     "mainnet:latency": "node scripts/mainnet/02-gateway-latency.js",
@@ -17,12 +17,10 @@
     "mainnet:verify": "node scripts/mainnet/05-e2e-verify.js"
   },
   "dependencies": {
-    "@ar.io/sdk": "latest",
     "@digitalbazaar/bbs-signatures": "latest",
     "arweave": "latest",
     "bs58": "latest"
   },
   "devDependencies": {
-    "arlocal": "latest"
   }
 }
