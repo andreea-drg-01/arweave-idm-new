@@ -1,0 +1,580 @@
+{
+  "env": {
+    "node": "v24.22.1",
+    "platform": "win32 10.0.26200",
+    "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+    "cores": 12,
+    "totalMemGB": 15.9,
+    "date": "2026-11-16T22:43:02.516Z"
+  },
+  "meta": {
+    "gateways": [
+      "turbo-gateway.com",
+      "ar-io.dev"
+    ],
+    "summary": [
+      {
+        "kind": "txid",
+        "gateway": "turbo-gateway.com",
+        "runs": 30,
+        "success": 30,
+        "median_ms": 140.5,
+        "p95_ms": 172.44,
+        "mean_ms": 159.84,
+        "sd_ms": 86.15
+      },
+      {
+        "kind": "txid",
+        "gateway": "ar-io.dev",
+        "runs": 30,
+        "success": 30,
+        "median_ms": 138.1,
+        "p95_ms": 143.18,
+        "mean_ms": 147.68,
+        "sd_ms": 50.73
+      }
+    ]
+  },
+  "rows": [
+    {
+      "run": 1,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 613.96,
+      "bytes": 745
+    },
+    {
+      "run": 1,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 416.14,
+      "bytes": 745
+    },
+    {
+      "run": 2,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 137.43,
+      "bytes": 745
+    },
+    {
+      "run": 2,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 137.25,
+      "bytes": 745
+    },
+    {
+      "run": 3,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 146.54,
+      "bytes": 745
+    },
+    {
+      "run": 3,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.51,
+      "bytes": 745
+    },
+    {
+      "run": 4,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 143.28,
+      "bytes": 745
+    },
+    {
+      "run": 4,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.1,
+      "bytes": 745
+    },
+    {
+      "run": 5,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 150.44,
+      "bytes": 745
+    },
+    {
+      "run": 5,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 140.32,
+      "bytes": 745
+    },
+    {
+      "run": 6,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 137.56,
+      "bytes": 745
+    },
+    {
+      "run": 6,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.62,
+      "bytes": 745
+    },
+    {
+      "run": 7,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 136.68,
+      "bytes": 745
+    },
+    {
+      "run": 7,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.04,
+      "bytes": 745
+    },
+    {
+      "run": 8,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 139.92,
+      "bytes": 745
+    },
+    {
+      "run": 8,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.97,
+      "bytes": 745
+    },
+    {
+      "run": 9,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 137.38,
+      "bytes": 745
+    },
+    {
+      "run": 9,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.83,
+      "bytes": 745
+    },
+    {
+      "run": 10,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 138.31,
+      "bytes": 745
+    },
+    {
+      "run": 10,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.21,
+      "bytes": 745
+    },
+    {
+      "run": 11,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 149.5,
+      "bytes": 745
+    },
+    {
+      "run": 11,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 137.75,
+      "bytes": 745
+    },
+    {
+      "run": 12,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 136.69,
+      "bytes": 745
+    },
+    {
+      "run": 12,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 137.88,
+      "bytes": 745
+    },
+    {
+      "run": 13,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 151.76,
+      "bytes": 745
+    },
+    {
+      "run": 13,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.83,
+      "bytes": 745
+    },
+    {
+      "run": 14,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 138.19,
+      "bytes": 745
+    },
+    {
+      "run": 14,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.36,
+      "bytes": 745
+    },
+    {
+      "run": 15,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 140.97,
+      "bytes": 745
+    },
+    {
+      "run": 15,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 140.42,
+      "bytes": 745
+    },
+    {
+      "run": 16,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 157.35,
+      "bytes": 745
+    },
+    {
+      "run": 16,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 142.68,
+      "bytes": 745
+    },
+    {
+      "run": 17,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 172.44,
+      "bytes": 745
+    },
+    {
+      "run": 17,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 137.14,
+      "bytes": 745
+    },
+    {
+      "run": 18,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 151.54,
+      "bytes": 745
+    },
+    {
+      "run": 18,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 143.18,
+      "bytes": 745
+    },
+    {
+      "run": 19,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 148.86,
+      "bytes": 745
+    },
+    {
+      "run": 19,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.31,
+      "bytes": 745
+    },
+    {
+      "run": 20,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 148.11,
+      "bytes": 745
+    },
+    {
+      "run": 20,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 141.99,
+      "bytes": 745
+    },
+    {
+      "run": 21,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 150.41,
+      "bytes": 745
+    },
+    {
+      "run": 21,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 139.19,
+      "bytes": 745
+    },
+    {
+      "run": 22,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 153.56,
+      "bytes": 745
+    },
+    {
+      "run": 22,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 139.32,
+      "bytes": 745
+    },
+    {
+      "run": 23,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 139.79,
+      "bytes": 745
+    },
+    {
+      "run": 23,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.99,
+      "bytes": 745
+    },
+    {
+      "run": 24,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 138.14,
+      "bytes": 745
+    },
+    {
+      "run": 24,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.67,
+      "bytes": 745
+    },
+    {
+      "run": 25,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 141.55,
+      "bytes": 745
+    },
+    {
+      "run": 25,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 138.69,
+      "bytes": 745
+    },
+    {
+      "run": 26,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 136.36,
+      "bytes": 745
+    },
+    {
+      "run": 26,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.74,
+      "bytes": 745
+    },
+    {
+      "run": 27,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 140.5,
+      "bytes": 745
+    },
+    {
+      "run": 27,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.53,
+      "bytes": 745
+    },
+    {
+      "run": 28,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 139.29,
+      "bytes": 745
+    },
+    {
+      "run": 28,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 137.44,
+      "bytes": 745
+    },
+    {
+      "run": 29,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 140.23,
+      "bytes": 745
+    },
+    {
+      "run": 29,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.88,
+      "bytes": 745
+    },
+    {
+      "run": 30,
+      "kind": "txid",
+      "gateway": "turbo-gateway.com",
+      "ok": true,
+      "status": 200,
+      "ms": 138.38,
+      "bytes": 745
+    },
+    {
+      "run": 30,
+      "kind": "txid",
+      "gateway": "ar-io.dev",
+      "ok": true,
+      "status": 200,
+      "ms": 136.52,
+      "bytes": 745
+    }
+  ]
+}
